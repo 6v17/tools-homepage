@@ -3,32 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="花田暮雨的工具发布页，集中展示和下载我发布的桌面工具。">
 <title>花田暮雨的工具库</title>
 <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-<header>
-  <h1>花田暮雨</h1>
-  <p>这里收集了我发布的所有工具!</p>
-  <a class="github-btn" href="https://github.com/6v17" target="_blank">GitHub 仓库</a>
-</header>
+<div class="page-shell">
+  <header class="hero">
+    <p class="eyebrow">Tools by 6v17</p>
+    <h1>花田暮雨的工具库</h1>
+    <p class="hero-text">一个专门用来发布和下载我自己做的小工具的静态页面。后续新工具会持续补充在这里。</p>
+    <div class="hero-actions">
+      <a class="primary-btn" href="https://github.com/6v17" target="_blank" rel="noreferrer">查看 GitHub</a>
+      <a class="secondary-btn" href="#tools">浏览工具</a>
+    </div>
+  </header>
 
+  <main>
 
-<div class="tools-container">
-  <div class="tool-card">
-    <img src="./img/icons/video-seek.ico" alt="视频检索工具">
-    <h3>视频检索工具</h3>
-    <p>本地视频检索工具，支持图搜视频、文本搜索</p>
-    <a href="https://pan.baidu.com/s/1XWmeBCL-hJ1ywYgNQVzlKw" target="_blank">下载 VideoSeek</a>
-  </div>
-  <!-- 新工具直接复制 tool-card 区块即可 -->
+    <section class="tools-section" id="tools">
+      <div class="section-heading">
+        <p class="section-kicker">Available Now</p>
+        <h2>已发布工具</h2>
+        <p>每个工具卡片可以放简介、版本信息、下载链接和更新说明。</p>
+      </div>
+
+      <div class="tools-container">
+        <article class="tool-card">
+          <div class="tool-icon-wrap">
+            <img src="./img/icons/video-seek.ico" alt="视频检索工具">
+          </div>
+          <div class="tool-meta">
+            <span class="tool-tag">桌面工具</span>
+            <span class="tool-version">首个发布项</span>
+          </div>
+          <h3>VideoSeek</h3>
+          <p>本地视频检索工具，支持以图搜视频和文本搜索，适合整理和快速定位视频素材。</p>
+          <div class="tool-actions">
+            <a class="primary-btn" href="https://pan.baidu.com/s/1XWmeBCL-hJ1ywYgNQVzlKw" target="_blank" rel="noreferrer">下载工具</a>
+          </div>
+        </article>
+        <!-- 新工具直接复制 tool-card 区块即可 -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 花田暮雨</p>
+    <p>这个页面用于展示和分发我的个人工具。</p>
+  </footer>
 </div>
-
-<footer>
-  © 2026 花田暮雨
-</footer>
-
-<script src="./js/script.js"></script>
 </body>
 </html>
