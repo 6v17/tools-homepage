@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; padding: 0;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  color: #333;
+}
+header {
+  text-align: center;
+  padding: 60px 20px 40px 20px;
+}
+header h1 {
+  font-size: 42px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-shadow:
+     2px 2px 0 #000,   /* 黑色描边 */
+     -2px -2px 0 #000,
+     2px -2px 0 #000,
+     -2px 2px 0 #000,
+     2px 2px 4px rgba(0,0,0,0.3); /* 原来的阴影 */
+}
+
+header p {
+  font-size: 20px;
+  color: #f0f0f0;
+  margin-top: 0;
+  text-shadow:
+      1px 1px 0 #000,
+      -1px 1px 0 #000,
+      1px -1px 0 #000,
+      -1px -1px 0 #000;
+}
+
+.tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px 60px 20px;
+}
+
+.tool-card {
+  background: #fff;
+  border-radius: 12px;
+  width: 260px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+}
+.tool-card img {
+  width: 80px; height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.tool-card h3 { margin: 0 0 10px 0; font-size: 22px; }
+.tool-card p { font-size: 16px; color: #555; margin-bottom: 15px; }
+.tool-card a {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #2196F3;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.tool-card a:hover { background-color: #1976D2; }
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: rgba(0,0,0,0.05);
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 700px) {
+  .tools-container { flex-direction: column; align-items: center; }
+}
+.github-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #24292e;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.github-btn:hover {
+  background-color: #444c56;
+}
