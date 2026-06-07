@@ -7,16 +7,18 @@
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#0f766e">
 <meta name="format-detection" content="telephone=no,email=no,address=no">
-<meta property="og:title" content="花田暮雨 - 工具发布页">
+<meta property="og:title" content="花田暮雨的工具发布页">
 <meta property="og:description" content="集中展示和下载我发布的桌面工具。">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="./icon.png">
+<meta property="og:url" content="https://lv17.top/">
+<meta property="og:image" content="https://lv17.top/icon.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="花田暮雨 - 工具发布页">
+<meta name="twitter:title" content="花田暮雨的工具发布页">
 <meta name="twitter:description" content="集中展示和下载我发布的桌面工具。">
-<meta name="twitter:image" content="./icon.png">
-<title>花田暮雨</title>
+<meta name="twitter:image" content="https://lv17.top/icon.png">
+<link rel="canonical" href="https://lv17.top/">
+<title>花田暮雨的工具发布页</title>
 <link rel="icon" href="./favicon.ico" sizes="any">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="./icon.png">
@@ -27,33 +29,47 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "花田暮雨",
-  "inLanguage": "zh-CN",
-  "description": "集中展示和下载我发布的桌面工具。",
-  "url": "/"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "花田暮雨",
+      "inLanguage": "zh-CN",
+      "description": "集中展示和下载我发布的桌面工具。",
+      "url": "https://lv17.top/"
+    },
+    {
+      "@type": "ItemList",
+      "name": "已发布工具",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "VideoSeek",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Windows",
+            "description": "本地视频检索工具，支持以图搜视频和文本搜索，适合整理和快速定位视频素材。",
+            "softwareVersion": "1.0.83",
+            "downloadUrl": "https://1858268090.share.123pan.cn/123pan/VFA7vd-OHJXA?pwd=hAH8#"
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>
 <body>
 
-<div class="page-shell">
-  <header class="hero">
-    <p class="eyebrow">Tools by 6v17</p>
-    <h1>花田暮雨</h1>
-    <p class="hero-text">一个专门用来发布和下载我自己做的小工具的静态页面，后续新工具会持续补充在这里。</p>
-    <div class="hero-actions">
-      <a class="primary-btn" href="https://github.com/6v17" target="_blank" rel="noopener noreferrer" aria-label="在新标签页打开 GitHub 主页">查看 GitHub</a>
-      <a class="secondary-btn" href="#tools">浏览工具</a>
-    </div>
-  </header>
+<a class="skip-link" href="#tools">跳到工具列表</a>
 
-  <main>
+<div class="page-shell">
+  <main id="main">
 
     <section class="tools-section" id="tools">
       <div class="section-heading">
-        <p class="section-kicker">Available Now</p>
-        <h2>已发布工具</h2>
+        <h1>花田暮雨的工具发布页</h1>
       </div>
 
       <div class="tools-container">
@@ -63,17 +79,45 @@
           </div>
           <div class="tool-meta">
             <span class="tool-tag">windows桌面工具</span>
-            <span class="tool-version">首个发布项</span>
+            <span class="tool-version">v1.0.83</span>
           </div>
           <h3>VideoSeek</h3>
           <p>本地视频检索工具，支持以图搜视频和文本搜索，适合整理和快速定位视频素材!</p>
+          <div class="tool-actions">
+            <a class="primary-btn" href="https://1858268090.share.123pan.cn/123pan/VFA7vd-OHJXA?pwd=hAH8#" target="_blank" rel="noopener noreferrer" aria-label="在新标签页下载 VideoSeek v1.0.83">v1.0.83 下载</a>
+          </div>
 
-          <div class="tool-actions">
-            <a class="primary-btn" href="https://1858268090.share.123pan.cn/123pan/VFA7vd-vsJnA?pwd=acS4#" target="_blank" rel="noopener noreferrer" aria-label="在新标签页下载 VideoSeek v1.0.82">v1.0.82下载</a>
-          </div>
-          <div class="tool-actions">
-            <a class="primary-btn" href="https://1858268090.share.123pan.cn/123pan/VFA7vd-YuNXA?pwd=WNiA#" target="_blank" rel="noopener noreferrer" aria-label="在新标签页下载 VideoSeek v1.0.83">v1.0.83下载</a>
-          </div>
+          <details class="tool-changelog" open>
+            <summary>v1.0.83 更新说明</summary>
+            <div class="changelog-body">
+              <section class="changelog-group">
+                <h4>核心优化</h4>
+                <ul>
+                  <li>搜索逻辑优化，部分模型抽帧与语义化链路改进</li>
+                  <li>新增搜索范围选择、图文混合搜索与搜索预设</li>
+                  <li>适配 Chinese-CLIP，中文文本搜索更精准</li>
+                  <li>GitHub 增加全链路 GPU 抽帧推理流分支</li>
+                  <li>新增本机搜索接口：在「设置 → 本机搜索接口」复制接入说明，发给 Cursor 等 Agent（建议附带安装目录），即可协助检索素材</li>
+                </ul>
+              </section>
+              <section class="changelog-group">
+                <h4>问题修复</h4>
+                <ul>
+                  <li>修复部分已知问题，提升整体稳定性</li>
+                </ul>
+              </section>
+              <section class="changelog-group changelog-notice">
+                <h4>其他说明</h4>
+                <ul>
+                  <li>混剪溯源功能不符合软件定位，v1.0.83 起已移除</li>
+                  <li>因 OSS 托管成本较高，后续模型将统一上传至 123 云盘；注册登录后仍可免费、不限速下载</li>
+                </ul>
+              </section>
+              <p class="changelog-footnote">
+                觉得有帮助可以在 <a href="https://github.com/6v17/VideoSeek" target="_blank" rel="noopener noreferrer">GitHub 点个 Star</a>，或关注 <a href="https://space.bilibili.com/473427924" target="_blank" rel="noopener noreferrer">B 站账号</a>。
+              </p>
+            </div>
+          </details>
         </article>
         <!-- 新工具直接复制 tool-card 区块即可 -->
       </div>
@@ -82,7 +126,9 @@
 
   <footer class="site-footer">
     <p>© 2026 花田暮雨</p>
-    <p>这个页面用于展示和分发我的个人工具!</p>
+    <p class="site-footer-links">
+      <a href="https://github.com/6v17" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
   </footer>
 </div>
 </body>
