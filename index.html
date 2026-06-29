@@ -50,8 +50,8 @@
             "applicationCategory": "UtilitiesApplication",
             "operatingSystem": "Windows",
             "description": "本地视频检索工具，支持以图搜视频与文本搜索，帮你整理素材库、快速定位目标片段。",
-            "softwareVersion": "1.0.84",
-            "downloadUrl": "https://1858268090.share.123pan.cn/123pan/VFA7vd-RBeXA?pwd=AMv2#"
+            "softwareVersion": "1.0.85",
+            "downloadUrl": "https://1858268090.share.123pan.cn/123pan/VFA7vd-XAJXA?pwd=S2Hz#"
           }
         }
       ]
@@ -79,40 +79,36 @@
           </div>
           <div class="tool-meta">
             <span class="tool-tag">Windows 桌面工具</span>
-            <span class="tool-version">v1.0.84</span>
+            <span class="tool-version">v1.0.85-beta</span>
           </div>
           <h3>VideoSeek</h3>
           <p>本地视频检索工具，支持以图搜视频与文本搜索，帮你整理素材库、快速定位目标片段。</p>
           <div class="tool-actions">
+            <a class="primary-btn" href="https://1858268090.share.123pan.cn/123pan/VFA7vd-XAJXA?pwd=S2Hz#" target="_blank" rel="noopener noreferrer" aria-label="在新标签页下载 VideoSeek v1.0.85-beta">v1.0.85-beta 下载</a>
             <a class="primary-btn" href="https://1858268090.share.123pan.cn/123pan/VFA7vd-iLGXA?pwd=B2Ez#" target="_blank" rel="noopener noreferrer" aria-label="在新标签页下载 VideoSeek v1.0.84">v1.0.84 下载</a>
           </div>
 
           <details class="tool-changelog" open>
-            <summary>v1.0.84 更新说明</summary>
+            <summary>v1.0.85 更新说明</summary>
             <div class="changelog-body">
               <section class="changelog-group">
                 <h4>新功能</h4>
                 <ul>
-                  <li>新增「素材篮」：单次检索会话中可暂存多个视频片段，像购物车一样勾选管理，支持一键导出片段或片段清单 JSON</li>
+                  <li>新增「视频笔录」：按单视频 chunk 自动分镜，抽帧送入理解模型生成每段描述，并汇总为完整笔录</li>
+                  <li>支持导出笔录，便于归档与二次编辑</li>
                 </ul>
               </section>
               <section class="changelog-group">
                 <h4>接口与搜索</h4>
                 <ul>
-                  <li>本机搜索接口重构：规范更严格、格式更统一，便于 Cursor 等 Agent 接入调用</li>
-                  <li>局域网搜索与 PC 端对齐，统一支持三种搜索策略</li>
-                </ul>
-              </section>
-              <section class="changelog-group">
-                <h4>体验优化</h4>
-                <ul>
-                  <li>精简设置项，移除已废弃或无用的参数</li>
+                  <li>Agent API 新增视频笔录能力，可与 Cursor 等 Agent 联动调用</li>
+                  <li>理解模型支持本机 LM Studio、Ollama，以及云端 API Key 等多种接入方式</li>
                 </ul>
               </section>
               <section class="changelog-group">
                 <h4>问题修复</h4>
                 <ul>
-                  <li>修复若干已知问题，整体运行更稳定</li>
+                  <li>修复新下载导入后显示异常的问题</li>
                 </ul>
               </section>
               <p class="changelog-footnote">
