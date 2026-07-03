@@ -18,6 +18,9 @@ SOURCE_CANDIDATES = [
 SCREENSHOTS = ROOT / "img" / "screenshots"
 ICON = ROOT / "img" / "icons" / "video-seek.ico"
 SHARE_IMAGE = ROOT / "img" / "og-share.png"
+MAX_PNG_BYTES = 240 * 1024
+MAX_PNG_WIDTH = 1200
+MIN_PNG_WIDTH = 840
 
 MAPPING = {
     "image-search.png": ("\u56fe", "\u641c"),
@@ -55,12 +58,33 @@ def sync_screenshots() -> None:
         print(f"synced {target} <- {source.name}")
 
 
+def optimize_png(png: Path) -> None:
+    image = Image.open(png).convert("RGB")
+    width = image.width
+    while width >= MIN_PNG_WIDTH:
+        resized = image.resize(
+            (width, max(1, int(image.height * width / image.width))),
+            Image.Resampling.LANCZOS,
+        )
+        resized.save(png, format="PNG", optimize=True, compress_level=9)
+        size_kb = png.stat().st_size // 1024
+        if png.stat().st_size <= MAX_PNG_BYTES:
+            print(f"png {png.name}: {size_kb}KB @ {width}px")
+            return
+        width -= 60
+    print(f"png {png.name}: {png.stat().st_size // 1024}KB (still above target)")
+
+
 def build_webp() -> None:
     for png in SCREENSHOTS.glob("*.png"):
+        optimize_png(png)
+        before = png.stat().st_size
         image = Image.open(png).convert("RGB")
         webp = png.with_suffix(".webp")
         image.save(webp, format="WEBP", quality=82, method=6)
-        print(f"webp {webp.name}: {png.stat().st_size // 1024}KB -> {webp.stat().st_size // 1024}KB")
+        print(
+            f"webp {webp.name}: {before // 1024}KB png -> {webp.stat().st_size // 1024}KB webp"
+        )
 
 
 def load_font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
