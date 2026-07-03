@@ -1,13 +1,16 @@
 {
-  "short_name": "花田暮雨",
-  "name": "花田暮雨工具发布页",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }],
+  "short_name": "VideoSeek",
+  "name": "VideoSeek — 本地 AI 视频素材检索",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f4efe7",
-  "theme_color": "#0f766e"
+  "theme_color": "#0f766e",
+  "description": "本地视频素材库：用文字或截图找片段时间，预览后导出片段。"
 }

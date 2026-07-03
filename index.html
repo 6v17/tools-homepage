@@ -1,133 +1,274 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="花田暮雨的工具发布页，集中展示和下载我发布的桌面工具。">
-<meta name="robots" content="index,follow">
-<meta name="theme-color" content="#0f766e">
-<meta name="format-detection" content="telephone=no,email=no,address=no">
-<meta property="og:title" content="花田暮雨的工具发布页">
-<meta property="og:description" content="集中展示和下载我发布的桌面工具。">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:url" content="https://lv17.top/">
-<meta property="og:image" content="https://lv17.top/icon.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="花田暮雨的工具发布页">
-<meta name="twitter:description" content="集中展示和下载我发布的桌面工具。">
-<meta name="twitter:image" content="https://lv17.top/icon.png">
-<link rel="canonical" href="https://lv17.top/">
-<title>花田暮雨的工具发布页</title>
-<link rel="icon" href="./favicon.ico" sizes="any">
-<link rel="icon" href="./icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="./icon.png">
-<link rel="manifest" href="./site.webmanifest">
-<link rel="preconnect" href="https://github.com">
-<link rel="preconnect" href="https://1858268090.share.123pan.cn">
-<link rel="stylesheet" href="./css/style.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "name": "花田暮雨",
-      "inLanguage": "zh-CN",
-      "description": "集中展示和下载我发布的桌面工具。",
-      "url": "https://lv17.top/"
-    },
-    {
-      "@type": "ItemList",
-      "name": "已发布工具",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "SoftwareApplication",
-            "name": "VideoSeek",
-            "applicationCategory": "UtilitiesApplication",
-            "operatingSystem": "Windows",
-            "description": "本地视频检索工具，支持以图搜视频与文本搜索，帮你整理素材库、快速定位目标片段。",
-            "softwareVersion": "1.0.85",
-            "downloadUrl": "https://1858268090.share.123pan.cn/123pan/VFA7vd-XAJXA?pwd=S2Hz#"
-          }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VideoSeek — 本地视频素材库。用文字或截图找片段时间，预览后导出片段。">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0f766e">
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <meta property="og:title" content="VideoSeek — 本地 AI 视频素材检索">
+  <meta property="og:description" content="用文字或截图找片段时间，预览后导出片段。全本地索引，不上传视频。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:url" content="https://lv17.top/">
+  <meta property="og:image" content="https://lv17.top/img/og-share.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VideoSeek — 本地 AI 视频素材检索">
+  <meta name="twitter:description" content="用文字或截图找片段时间，预览后导出片段。">
+  <meta name="twitter:image" content="https://lv17.top/img/og-share.png">
+  <link rel="canonical" href="https://lv17.top/">
+  <title>VideoSeek — 本地 AI 视频素材检索</title>
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icon.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="sitemap" type="application/xml" href="./sitemap.xml">
+  <link rel="preconnect" href="https://github.com">
+  <link rel="preconnect" href="https://1858268090.share.123pan.cn">
+  <link rel="preload" as="image" href="./img/screenshots/text-search.webp" type="image/webp">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "VideoSeek",
+        "inLanguage": "zh-CN",
+        "description": "本地视频素材库：用文字或截图找片段时间，预览后导出片段。",
+        "url": "https://lv17.top/"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "VideoSeek",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Windows 10, Windows 11",
+        "softwareVersion": "1.0.85",
+        "description": "本地视频检索工具，支持文字搜索、以图搜视频、预览与导出片段。",
+        "downloadUrl": "https://1858268090.share.123pan.cn/123pan/VFA7vd-XAJXA?pwd=S2Hz#",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "CNY"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "6v17",
+          "url": "https://github.com/6v17"
         }
-      ]
-    }
-  ]
-}
-</script>
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
 
-<a class="skip-link" href="#tools">跳到工具列表</a>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="VideoSeek 首页">
+        <img src="./img/icons/video-seek.ico" alt="" width="36" height="36" decoding="async">
+        <strong>VideoSeek</strong>
+      </a>
 
-<div class="page-shell">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="页面导航">
+        <a href="#features">功能</a>
+        <a href="#screenshots">界面</a>
+        <a href="#workflow">上手</a>
+        <a href="#download">下载</a>
+        <a href="#community">交流</a>
+      </nav>
+    </div>
+  </header>
+
   <main id="main">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="hero-kicker">Windows · 开源 AGPL-3.0</p>
+          <h1>用文字或截图，<span>在本地素材库里找片段</span></h1>
+          <p class="hero-lead">
+            索引、检索都在本机完成，不上传你的视频。预览命中后直接导出 MP4。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" data-site="download-current" href="https://1858268090.share.123pan.cn/123pan/VFA7vd-XAJXA?pwd=S2Hz#" target="_blank" rel="noopener noreferrer">
+              下载 <span data-site="version-label">v1.0.85-beta</span>
+            </a>
+            <a class="secondary-btn" href="https://github.com/6v17/VideoSeek" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
 
-    <section class="tools-section" id="tools">
-      <div class="section-heading">
-        <h1>花田暮雨的工具发布页</h1>
+        <div class="hero-visual">
+          <div class="hero-shot">
+            <picture>
+              <source srcset="./img/screenshots/text-search.webp" type="image/webp">
+              <img src="./img/screenshots/text-search.png" alt="VideoSeek 文字搜索界面" width="960" height="600" fetchpriority="high" decoding="async">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-head">
+        <h2>功能</h2>
       </div>
 
-      <div class="tools-container">
-        <article class="tool-card">
-          <div class="tool-icon-wrap">
-            <img src="./img/icons/video-seek.ico" alt="视频检索工具" width="64" height="64" loading="lazy" decoding="async">
-          </div>
-          <div class="tool-meta">
-            <span class="tool-tag">Windows 桌面工具</span>
-            <span class="tool-version">v1.0.85-beta</span>
-          </div>
-          <h3>VideoSeek</h3>
-          <p>本地视频检索工具，支持以图搜视频与文本搜索，帮你整理素材库、快速定位目标片段。</p>
-          <div class="tool-actions">
-            <a class="primary-btn" href="https://1858268090.share.123pan.cn/123pan/VFA7vd-XAJXA?pwd=S2Hz#" target="_blank" rel="noopener noreferrer" aria-label="在新标签页下载 VideoSeek v1.0.85-beta">v1.0.85-beta 下载</a>
-            <a class="primary-btn" href="https://1858268090.share.123pan.cn/123pan/VFA7vd-iLGXA?pwd=B2Ez#" target="_blank" rel="noopener noreferrer" aria-label="在新标签页下载 VideoSeek v1.0.84">v1.0.84 下载</a>
-          </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>本地视频库</h3>
+          <p>添加文件夹，同步后自动抽帧建索引，支持多库。</p>
+        </article>
+        <article class="feature-card">
+          <h3>文字 / 图片搜索</h3>
+          <p>描述场景或上传参考图，返回相似画面的时间段。</p>
+        </article>
+        <article class="feature-card">
+          <h3>预览与导出</h3>
+          <p>时间轴预览命中片段，确认后导出 MP4。</p>
+        </article>
+        <article class="feature-card">
+          <h3>理解笔录 · Agent API</h3>
+          <p>可选生成 chunk 描述与整片总结；本机 HTTP 接口供 Agent 调用。</p>
+        </article>
+      </div>
+    </section>
 
-          <details class="tool-changelog" open>
-            <summary>v1.0.85 更新说明</summary>
-            <div class="changelog-body">
+    <section class="section section-alt" id="screenshots">
+      <div class="section-head">
+        <h2>界面</h2>
+      </div>
+
+      <div class="screenshot-grid screenshot-grid-duo">
+        <figure class="screenshot-card">
+          <picture>
+            <source srcset="./img/screenshots/image-search.webp" type="image/webp">
+            <img src="./img/screenshots/image-search.png" alt="以图搜视频" width="960" height="600" loading="lazy" decoding="async">
+          </picture>
+          <figcaption>以图搜视频</figcaption>
+        </figure>
+        <figure class="screenshot-card">
+          <picture>
+            <source srcset="./img/screenshots/understanding.webp" type="image/webp">
+            <img src="./img/screenshots/understanding.png" alt="理解笔录" width="960" height="600" loading="lazy" decoding="async">
+          </picture>
+          <figcaption>理解笔录</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <div class="section-head">
+        <h2>上手</h2>
+      </div>
+
+      <ol class="steps steps-compact">
+        <li><strong>1.</strong> 首次启动导入运行资源（模型、FFmpeg）</li>
+        <li><strong>2.</strong> 添加本地文件夹为视频库</li>
+        <li><strong>3.</strong> 同步，等待索引完成</li>
+        <li><strong>4.</strong> 搜索，预览并导出片段</li>
+      </ol>
+    </section>
+
+    <section class="section section-alt" id="download">
+      <div class="section-head">
+        <h2>下载</h2>
+      </div>
+
+      <div class="download-layout">
+        <div class="download-card download-card-centered">
+          <div class="tool-meta">
+            <span class="tool-tag">Windows 10 / 11</span>
+            <span class="tool-version" data-site="version-label">v1.0.85-beta</span>
+          </div>
+          <div class="tool-actions">
+            <a class="primary-btn" data-site="download-current" href="https://1858268090.share.123pan.cn/123pan/VFA7vd-XAJXA?pwd=S2Hz#" target="_blank" rel="noopener noreferrer">
+              <span data-site="download-current-label">v1.0.85-beta</span> 下载
+            </a>
+            <a class="secondary-btn" data-site="download-previous" href="https://1858268090.share.123pan.cn/123pan/VFA7vd-iLGXA?pwd=B2Ez#" target="_blank" rel="noopener noreferrer">
+              <span data-site="download-previous-label">v1.0.84</span>
+            </a>
+            <a class="secondary-btn" href="https://github.com/6v17/VideoSeek" target="_blank" rel="noopener noreferrer">
+              源码
+            </a>
+          </div>
+          <p class="download-note">
+            安装包不含模型，首次使用需在应用内导入。
+            也可手动下载 <a data-site="runtime-link" href="https://1858268090.share.123pan.cn/123pan/VFA7vd-vhJXA" target="_blank" rel="noopener noreferrer">运行资源</a>。
+          </p>
+
+          <details class="tool-changelog">
+            <summary id="changelog-summary">v1.0.85 更新说明</summary>
+            <div class="changelog-body" id="changelog-root">
               <section class="changelog-group">
                 <h4>新功能</h4>
                 <ul>
-                  <li>新增「视频笔录」：按单视频 chunk 自动分镜，抽帧送入理解模型生成每段描述，并汇总为完整笔录</li>
-                  <li>支持导出笔录，便于归档与二次编辑</li>
+                  <li>新增视频笔录：chunk 分镜 + 描述 + 整片汇总，支持导出</li>
                 </ul>
               </section>
               <section class="changelog-group">
-                <h4>接口与搜索</h4>
+                <h4>其它</h4>
                 <ul>
-                  <li>Agent API 新增视频笔录能力，可与 Cursor 等 Agent 联动调用</li>
-                  <li>理解模型支持本机 LM Studio、Ollama，以及云端 API Key 等多种接入方式</li>
+                  <li>Agent API 支持笔录；理解模型可接 LM Studio / Ollama / 云端 API</li>
+                  <li>修复新下载导入后显示异常</li>
                 </ul>
               </section>
-              <section class="changelog-group">
-                <h4>问题修复</h4>
-                <ul>
-                  <li>修复新下载导入后显示异常的问题</li>
-                </ul>
-              </section>
-              <p class="changelog-footnote">
-                觉得有帮助可以在 <a href="https://github.com/6v17/VideoSeek" target="_blank" rel="noopener noreferrer">GitHub 点个 Star</a>，或关注 <a href="https://space.bilibili.com/473427924" target="_blank" rel="noopener noreferrer">B 站账号</a>。
-              </p>
             </div>
           </details>
-        </article>
-        <!-- 新工具直接复制 tool-card 区块即可 -->
+        </div>
+
+        <aside class="requirements-card">
+          <h3>系统要求</h3>
+          <ul class="requirements-list" id="requirements-list">
+            <li>Windows 10 / 11（64 位）</li>
+            <li>首次使用需导入运行资源（模型、FFmpeg，约数 GB 磁盘空间）</li>
+            <li>推荐 16 GB 内存；有独显时可走 DirectML 加速</li>
+            <li>素材库路径需本机可读写（支持 NAS 映射目录）</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="community">
+      <div class="section-head">
+        <h2>交流</h2>
+      </div>
+
+      <div class="community-grid community-grid-compact">
+        <a class="community-card" href="https://qun.qq.com/universal-share/share?ac=1&amp;authKey=wnYNRNIQNBzMSRY%2BXpnbFipOanB0%2FB4BDDzPZAEK2mLTauEqBK6LqrOl3KAWVXFK&amp;busi_data=eyJncm91cENvZGUiOiIxMDMzNTUxNDM4IiwidG9rZW4iOiJ0YnMwM2ZmUTZ5SGg2cHliaTlDQWtQMThtMWIzWDU5dTZKV2V5bFZiOUpqZ3QwaHBJZ2I5M3k0cnc3a1BqQlQ5IiwidWluIjoiMjYyNzUzODQ3MiJ9&amp;data=h3Iw7rci2knLfeucOgJNq0eVtRbDXd8Z_2OFK2sMKrfXC_dLPwWdNw29iy3K1M6cXx5orh9N9gtuw3-kF-CrbA&amp;svctype=4&amp;tempid=h5_group_info" target="_blank" rel="noopener noreferrer">
+          QQ 群 1033551438
+        </a>
+        <a class="community-card" href="https://github.com/6v17/VideoSeek/issues" target="_blank" rel="noopener noreferrer">
+          GitHub Issues
+        </a>
+        <a class="community-card" href="https://space.bilibili.com/473427924" target="_blank" rel="noopener noreferrer">
+          B 站
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 花田暮雨</p>
-    <p class="site-footer-links">
-      <a href="https://github.com/6v17" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </p>
+    <div class="footer-inner">
+      <p>© 2026 VideoSeek · <a href="https://github.com/6v17/VideoSeek/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">AGPL-3.0</a></p>
+      <div class="site-footer-links">
+        <a href="https://github.com/6v17/VideoSeek" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/6v17/VideoSeek/blob/master/README.en.md" target="_blank" rel="noopener noreferrer">English</a>
+        <a href="#top">回到顶部</a>
+      </div>
+    </div>
   </footer>
-</div>
+
+  <script src="./js/site.js" defer></script>
+  <script src="./js/app.js" defer></script>
 </body>
 </html>
