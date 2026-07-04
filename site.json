@@ -3,16 +3,16 @@
   "tagline": "本地 AI 视频素材检索",
   "version": {
     "current": "1.0.85",
-    "label": "v1.0.85-beta"
+    "label": "v1.0.85"
   },
   "downloads": {
     "current": {
-      "label": "v1.0.85-beta",
-      "url": "https://1858268090.share.123pan.cn/123pan/VFA7vd-XAJXA?pwd=S2Hz#"
+      "label": "v1.0.85",
+      "url": "https://1858268090.share.123pan.cn/123pan/VFA7vd-BQyXA?pwd=8GKK#"
     },
     "previous": {
-      "label": "v1.0.84",
-      "url": "https://1858268090.share.123pan.cn/123pan/VFA7vd-iLGXA?pwd=B2Ez#"
+      "label": "v1.0.85-beta",
+      "url": "https://1858268090.share.123pan.cn/123pan/VFA7vd-XAJXA?pwd=S2Hz#"
     }
   },
   "resources": {
@@ -39,16 +39,18 @@
     "version": "1.0.85",
     "sections": [
       {
-        "title": "新功能",
+        "title": "新优化",
         "items": [
-          "新增视频笔录：chunk 分镜 + 描述 + 整片汇总，支持导出"
+          "从 FAISS 向量迁移至 LanceDB 向量数据库，高效管理，减小磁盘压力"
         ]
       },
       {
         "title": "其它",
         "items": [
-          "Agent API 支持笔录；理解模型可接 LM Studio / Ollama / 云端 API",
-          "修复新下载导入后显示异常"
+          "网络库较鸡肋，正式版已移除",
+          "Chunk 切分逻辑优化",
+          "设置页无用参数移除",
+          "修复搜索界面布局跳动 BUG"
         ]
       }
     ]
