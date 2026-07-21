@@ -65,6 +65,15 @@
     }
   }
 
+  function applyLinks(links) {
+    if (!links) {
+      return;
+    }
+    Object.keys(links).forEach(function (key) {
+      setHref(document.querySelectorAll('[data-site="link-' + key + '"]'), links[key]);
+    });
+  }
+
   function applySite(site) {
     setText(document.querySelectorAll('[data-site="version-label"]'), site.version.label);
     setText(document.querySelectorAll('[data-site="download-current-label"]'), site.downloads.current.label);
@@ -72,6 +81,7 @@
     setHref(document.querySelectorAll('[data-site="download-current"]'), site.downloads.current.url);
     setHref(document.querySelectorAll('[data-site="download-previous"]'), site.downloads.previous.url);
     setHref(document.querySelectorAll('[data-site="runtime-link"]'), site.resources.runtime.url);
+    applyLinks(site.links);
     renderRequirements(site.requirements);
     renderChangelog(site.changelog);
     updateSchema(site);

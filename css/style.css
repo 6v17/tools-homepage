@@ -219,6 +219,11 @@ a {
   line-height: 1.75;
 }
 
+.section-head a {
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
 .hero {
   width: min(var(--content-width), calc(100% - 32px));
   margin: 0 auto;
