@@ -189,13 +189,18 @@ a {
 
 .section-alt > .section-head,
 .section-alt > .screenshot-grid,
-.section-alt > .download-layout {
+.section-alt > .download-layout,
+.section-alt > .community-links {
   width: min(var(--content-width), calc(100% - 32px));
   margin-inline: auto;
 }
 
 .section-head {
   margin-bottom: 24px;
+}
+
+.section-head-center {
+  text-align: center;
 }
 
 .section-kicker {
@@ -600,28 +605,87 @@ picture img {
   margin-top: 6px;
 }
 
-.community-grid-compact {
-  display: flex;
-  flex-wrap: wrap;
+.faq-list {
+  display: grid;
   gap: 12px;
 }
 
-.community-grid-compact .community-card {
+.faq-item {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: var(--radius-md);
+  background: var(--panel-strong);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 22px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  float: right;
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
+.faq-item[open] summary::after {
+  content: "–";
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 22px 18px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.faq-item code {
+  padding: 0.1em 0.35em;
+  border-radius: 6px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 0.92em;
+}
+
+.faq-item a {
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+.community-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.community-link {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   min-height: 44px;
-  padding: 0 18px;
-  border: 1px solid rgba(255, 255, 255, 0.55);
+  padding: 0 20px;
+  border: 1px solid rgba(15, 118, 110, 0.22);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.52);
+  background: rgba(255, 253, 249, 0.88);
   color: var(--accent-strong);
   font-weight: 600;
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
-.community-grid-compact .community-card:hover {
-  transform: translateY(-2px);
+.community-link:hover {
+  transform: translateY(-1px);
+  background: #fff;
   box-shadow: var(--shadow-soft);
 }
 
@@ -713,14 +777,14 @@ picture img {
   .skip-link,
   .primary-btn,
   .secondary-btn,
-  .community-card,
+  .community-link,
   .site-header {
     transition: none;
   }
 
   .primary-btn:hover,
   .secondary-btn:hover,
-  .community-card:hover {
+  .community-link:hover {
     transform: none;
   }
 }

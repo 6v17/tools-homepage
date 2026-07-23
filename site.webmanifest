@@ -5,12 +5,19 @@
     {
       "src": "icon.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
     }
   ],
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f4efe7",
   "theme_color": "#0f766e",
-  "description": "本地视频素材库：用文字或截图找片段时间，预览后导出片段。"
+  "description": "本地视频语义检索：以文搜视频、以图搜视频、硬字幕 OCR，预览并导出片段。"
 }

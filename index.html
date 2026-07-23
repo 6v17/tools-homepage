@@ -3,25 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="VideoSeek — 本地视频素材库。用文字或截图找片段时间，预览后导出片段。">
+  <meta name="description" content="VideoSeek：Windows 本地视频语义检索。支持以文搜视频、以图搜视频、硬字幕 OCR 检索，预览并导出片段。全本地索引，不上传素材。开源免费。">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#0f766e">
   <meta name="format-detection" content="telephone=no,email=no,address=no">
-  <meta property="og:title" content="VideoSeek — 本地 AI 视频素材检索">
-  <meta property="og:description" content="用文字或截图找片段时间，预览后导出片段。全本地索引，不上传视频。">
+  <meta property="og:site_name" content="VideoSeek">
+  <meta property="og:title" content="VideoSeek — 本地视频语义检索｜以文搜视频、以图搜视频">
+  <meta property="og:description" content="本机索引硬盘/NAS 视频素材：文字或截图找镜头，硬字幕 OCR 可搜，预览后导出 MP4。不上传视频。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:url" content="https://lv17.top/">
   <meta property="og:image" content="https://lv17.top/img/og-share.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="VideoSeek — 本地 AI 视频素材检索">
-  <meta name="twitter:description" content="用文字或截图找片段时间，预览后导出片段。">
+  <meta name="twitter:title" content="VideoSeek — 本地视频语义检索｜以文搜视频、以图搜视频">
+  <meta name="twitter:description" content="本机索引硬盘/NAS 视频素材：文字或截图找镜头，硬字幕 OCR 可搜，预览后导出 MP4。">
   <meta name="twitter:image" content="https://lv17.top/img/og-share.png">
   <link rel="canonical" href="https://lv17.top/">
-  <title>VideoSeek — 本地 AI 视频素材检索</title>
+  <title>VideoSeek — 本地视频语义检索｜以文搜视频、以图搜视频、硬字幕 OCR</title>
   <link rel="icon" href="./favicon.ico" sizes="any">
-  <link rel="icon" href="./icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./icon.png">
+  <link rel="icon" href="./icon.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180">
   <link rel="manifest" href="./site.webmanifest">
   <link rel="sitemap" type="application/xml" href="./sitemap.xml">
   <link rel="preconnect" href="https://github.com">
@@ -35,8 +36,9 @@
       {
         "@type": "WebSite",
         "name": "VideoSeek",
+        "alternateName": ["VideoSeek 本地视频语义检索", "lv17 VideoSeek"],
         "inLanguage": "zh-CN",
-        "description": "本地视频素材库：用文字或截图找片段时间，预览后导出片段。",
+        "description": "Windows 本地视频语义检索：以文搜视频、以图搜视频、硬字幕 OCR，预览并导出片段。",
         "url": "https://lv17.top/"
       },
       {
@@ -45,8 +47,10 @@
         "applicationCategory": "MultimediaApplication",
         "operatingSystem": "Windows 10, Windows 11",
         "softwareVersion": "1.0.87",
-        "description": "本地视频检索工具，支持文字搜索、以图搜视频、预览与导出片段。",
+        "description": "本地视频语义检索桌面应用。支持文字搜视频、以图搜视频、硬字幕 OCR 检索、多库管理、预览与导出 MP4；可选本机 Agent API。数据不上传。",
+        "url": "https://lv17.top/",
         "downloadUrl": "https://1858268090.share.123pan.cn/123pan/VFA7vd-GwPnA?pwd=eV69#",
+        "license": "https://www.gnu.org/licenses/agpl-3.0.html",
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -57,6 +61,43 @@
           "name": "6v17",
           "url": "https://github.com/6v17"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "VideoSeek 是什么？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VideoSeek 是 Windows 为主的本地视频语义检索桌面应用。把硬盘或 NAS 里的视频建成素材库后，可用文字、截图搜画面，也可对硬字幕做 OCR 后按关键词找时间点，预览并导出 MP4。索引与检索都在本机完成，不上传视频文件。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "安装后需要联网才能用吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "安装包与模型等运行资源是分离的。首次使用需导入画面模型与 FFmpeg（做硬字幕还需 OCR 包）。你可以事先下载资源包，在应用内离线导入；不必先安装 Python。资源文件已在本地时，可以离线完成初始化。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "支持硬字幕搜索吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "支持。在「字幕库」中提取画面硬字幕（OCR）后，可按关键词搜索时间点，支持精确与模糊匹配。与画面检索相互独立，需先导入 OCR 运行资源。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "VideoSeek 收费吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "永久免费，开源协议为 AGPL-3.0。请从官网 lv17.top 或 GitHub 6v17/VideoSeek 获取，勿信收费倒卖或付费代装。"
+            }
+          }
+        ]
       }
     ]
   }
@@ -84,7 +125,8 @@
         <a href="#workflow">上手</a>
         <a data-site="link-docs" href="https://ycnwd8tcjgtu.feishu.cn/docx/ZWkrdSqA6oJTOrxQ2XscxYtmnad" target="_blank" rel="noopener noreferrer">教程</a>
         <a href="#download">下载</a>
-        <a href="#community">交流</a>
+        <a href="#faq">常见问题</a>
+        <a href="#community">交流反馈</a>
       </nav>
     </div>
   </header>
@@ -96,7 +138,7 @@
           <p class="hero-kicker">Windows · 开源 AGPL-3.0</p>
           <h1>用文字或截图，<span>在本地素材库里找片段</span></h1>
           <p class="hero-lead">
-            索引、检索都在本机完成，不上传你的视频。预览命中后直接导出 MP4。
+            文字 / 截图搜画面，也能按硬字幕关键词找时间点。索引与检索都在本机，不上传视频；预览后直接导出 MP4。
           </p>
           <div class="hero-actions">
             <a class="primary-btn" data-site="download-current" href="https://1858268090.share.123pan.cn/123pan/VFA7vd-GwPnA?pwd=eV69#" target="_blank" rel="noopener noreferrer">
@@ -130,19 +172,19 @@
       <div class="feature-grid">
         <article class="feature-card">
           <h3>本地视频库</h3>
-          <p>添加文件夹，同步后自动抽帧建索引，支持多库。</p>
+          <p>添加文件夹，勾选后同步抽帧建索引，支持多库与搜索范围。</p>
         </article>
         <article class="feature-card">
-          <h3>文字 / 图片搜索</h3>
-          <p>描述场景或上传参考图，返回相似画面的时间段。</p>
+          <h3>文字 / 图片 / 字幕搜索</h3>
+          <p>描述场景或上传参考图找相似镜头；字幕库 OCR 后还可按硬字幕关键词定位时间点。</p>
         </article>
         <article class="feature-card">
           <h3>预览与导出</h3>
           <p>时间轴预览命中片段，确认后导出 MP4。</p>
         </article>
         <article class="feature-card">
-          <h3>理解笔录 · Agent API</h3>
-          <p>可选生成 chunk 描述与整片总结；本机 HTTP 接口供 Agent 调用。</p>
+          <h3>本机 Agent API</h3>
+          <p>可选 HTTP 接口：供 Cursor 等调用搜索、读库与导出，数据仍留在本机。</p>
         </article>
       </div>
     </section>
@@ -177,10 +219,10 @@
       </div>
 
       <ol class="steps steps-compact">
-        <li><strong>1.</strong> 首次启动导入运行资源（模型、FFmpeg）</li>
-        <li><strong>2.</strong> 添加本地文件夹为视频库</li>
-        <li><strong>3.</strong> 同步，等待索引完成</li>
-        <li><strong>4.</strong> 搜索，预览并导出片段</li>
+        <li><strong>1.</strong> 首次启动导入运行资源（模型、FFmpeg；字幕另需 OCR）</li>
+        <li><strong>2.</strong> 「视频库」Tab 添加本地文件夹</li>
+        <li><strong>3.</strong> 勾选视频 → 同步选中视频，等待索引完成</li>
+        <li><strong>4.</strong> 搜索、预览并导出片段（字幕走「字幕库」）</li>
       </ol>
     </section>
 
@@ -193,7 +235,7 @@
         <div class="download-card download-card-centered">
           <div class="tool-meta">
             <span class="tool-tag">Windows 10 / 11</span>
-            <span class="tool-version" data-site="version-label">v1.0.85-beta</span>
+            <span class="tool-version" data-site="version-label">v1.0.87</span>
           </div>
           <div class="tool-actions">
             <a class="primary-btn" data-site="download-current" href="https://1858268090.share.123pan.cn/123pan/VFA7vd-GwPnA?pwd=eV69#" target="_blank" rel="noopener noreferrer">
@@ -215,9 +257,15 @@
             <summary id="changelog-summary">v1.0.87 更新说明</summary>
             <div class="changelog-body" id="changelog-root">
               <section class="changelog-group">
+                <h4>使用教程</h4>
+                <ul>
+                  <li>图文上手已发布（导入资源、视频库同步、文搜/图搜、字幕库）：见顶部「教程」或飞书文档</li>
+                </ul>
+              </section>
+              <section class="changelog-group">
                 <h4>硬字幕检索</h4>
                 <ul>
-                  <li>新增字幕库：对片中硬字幕做 OCR，按台词关键词搜时间点（不再依赖旧版语音 ASR 主路径）</li>
+                  <li>新增字幕库：对片中硬字幕做 OCR，按关键词搜时间点</li>
                   <li>字幕库与画面库拆分：OCR 与 CLIP 画面索引互不绑架，可单独加库、提取、维护</li>
                   <li>支持精确 / 模糊匹配；结果带命中高亮，方便对照原文</li>
                   <li>提取流程：有声段 VAD → 抽帧 → RapidOCR，进度与阶段提示更清楚</li>
@@ -236,6 +284,7 @@
                 <ul>
                   <li>修复部分安装包「提取字幕无反应 / 失败」（RapidOCR 配置缺失）</li>
                   <li>差电脑 / 核显 OCR 中途崩溃时自动切 CPU 继续（可能更慢，但不易半路挂掉）</li>
+                  <li>修复 Windows 下「勾选同步却秒结束、仍无向量」的路径匹配问题</li>
                   <li>理解页首进卡顿优化；搜索页播放器区域滚轮等交互修复</li>
                   <li>搜索结果状态条更干净；导出状态提示更短更清晰</li>
                   <li>清库 / 卸模型后的崩溃与状态错乱若干修复；日志自动轮转与清理</li>
@@ -266,21 +315,42 @@
       </div>
     </section>
 
-    <section class="section" id="community">
+    <section class="section" id="faq">
       <div class="section-head">
-        <h2>交流</h2>
+        <h2>常见问题</h2>
+        <p>更多步骤见 <a data-site="link-docs" href="https://ycnwd8tcjgtu.feishu.cn/docx/ZWkrdSqA6oJTOrxQ2XscxYtmnad" target="_blank" rel="noopener noreferrer">使用教程</a>。</p>
       </div>
 
-      <div class="community-grid community-grid-compact">
-        <a class="community-card" href="https://qun.qq.com/universal-share/share?ac=1&amp;authKey=wnYNRNIQNBzMSRY%2BXpnbFipOanB0%2FB4BDDzPZAEK2mLTauEqBK6LqrOl3KAWVXFK&amp;busi_data=eyJncm91cENvZGUiOiIxMDMzNTUxNDM4IiwidG9rZW4iOiJ0YnMwM2ZmUTZ5SGg2cHliaTlDQWtQMThtMWIzWDU5dTZKV2V5bFZiOUpqZ3QwaHBJZ2I5M3k0cnc3a1BqQlQ5IiwidWluIjoiMjYyNzUzODQ3MiJ9&amp;data=h3Iw7rci2knLfeucOgJNq0eVtRbDXd8Z_2OFK2sMKrfXC_dLPwWdNw29iy3K1M6cXx5orh9N9gtuw3-kF-CrbA&amp;svctype=4&amp;tempid=h5_group_info" target="_blank" rel="noopener noreferrer">
-          QQ 群 1033551438
-        </a>
-        <a class="community-card" href="https://github.com/6v17/VideoSeek/issues" target="_blank" rel="noopener noreferrer">
-          GitHub Issues
-        </a>
-        <a class="community-card" href="https://space.bilibili.com/473427924" target="_blank" rel="noopener noreferrer">
-          B 站
-        </a>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>VideoSeek 是什么？</summary>
+          <p>Windows 为主的<strong>本地视频语义检索</strong>桌面应用：文字 / 截图搜画面，硬字幕 OCR 后也能按关键词找时间点，预览并导出 MP4。索引与检索都在本机，不上传视频。</p>
+        </details>
+        <details class="faq-item">
+          <summary>安装后必须联网下载模型吗？</summary>
+          <p>安装包与运行资源分离。首次需导入<strong>画面模型</strong>与 <strong>FFmpeg</strong>（字幕另需 OCR）。可事先下载资源包再在应用内<strong>离线导入</strong>；不必自己装 Python。资源已在本地即可离线初始化。</p>
+        </details>
+        <details class="faq-item">
+          <summary>能搜硬字幕吗？</summary>
+          <p>支持。在<strong>字幕库</strong>提取硬字幕（OCR）后，按关键词搜时间点，精确 / 模糊可选，与画面检索相互独立。</p>
+        </details>
+        <details class="faq-item">
+          <summary>收费吗？从哪下载？</summary>
+          <p><strong>永久免费</strong>，AGPL-3.0 开源。请从本站或 <a href="https://github.com/6v17/VideoSeek" target="_blank" rel="noopener noreferrer">GitHub</a> 获取；勿信收费倒卖或付费代装。</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="community">
+      <div class="section-head section-head-center">
+        <h2>交流反馈</h2>
+        <p>使用问题或建议，欢迎来聊。</p>
+      </div>
+
+      <div class="community-links">
+        <a class="community-link" href="https://qun.qq.com/universal-share/share?ac=1&amp;authKey=wnYNRNIQNBzMSRY%2BXpnbFipOanB0%2FB4BDDzPZAEK2mLTauEqBK6LqrOl3KAWVXFK&amp;busi_data=eyJncm91cENvZGUiOiIxMDMzNTUxNDM4IiwidG9rZW4iOiJ0YnMwM2ZmUTZ5SGg2cHliaTlDQWtQMThtMWIzWDU5dTZKV2V5bFZiOUpqZ3QwaHBJZ2I5M3k0cnc3a1BqQlQ5IiwidWluIjoiMjYyNzUzODQ3MiJ9&amp;data=h3Iw7rci2knLfeucOgJNq0eVtRbDXd8Z_2OFK2sMKrfXC_dLPwWdNw29iy3K1M6cXx5orh9N9gtuw3-kF-CrbA&amp;svctype=4&amp;tempid=h5_group_info" target="_blank" rel="noopener noreferrer">QQ 群 1033551438</a>
+        <a class="community-link" href="https://github.com/6v17/VideoSeek/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a>
+        <a class="community-link" href="https://space.bilibili.com/473427924" target="_blank" rel="noopener noreferrer">B 站</a>
       </div>
     </section>
   </main>
@@ -290,6 +360,7 @@
       <p>© 2026 VideoSeek · <a href="https://github.com/6v17/VideoSeek/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">AGPL-3.0</a></p>
       <div class="site-footer-links">
         <a data-site="link-docs" href="https://ycnwd8tcjgtu.feishu.cn/docx/ZWkrdSqA6oJTOrxQ2XscxYtmnad" target="_blank" rel="noopener noreferrer">教程</a>
+        <a href="#faq">常见问题</a>
         <a href="https://github.com/6v17/VideoSeek" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://github.com/6v17/VideoSeek/blob/master/README.en.md" target="_blank" rel="noopener noreferrer">English</a>
         <a href="#top">回到顶部</a>
