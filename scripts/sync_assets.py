@@ -60,7 +60,7 @@ def sync_screenshots() -> None:
 
 def optimize_png(png: Path) -> None:
     image = Image.open(png).convert("RGB")
-    width = image.width
+    width = min(image.width, MAX_PNG_WIDTH)
     while width >= MIN_PNG_WIDTH:
         resized = image.resize(
             (width, max(1, int(image.height * width / image.width))),
